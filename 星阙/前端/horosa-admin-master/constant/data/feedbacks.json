@@ -1,0 +1,9 @@
+[
+  {
+    "time": "2024-10-10 12:00",
+    "nickname": "张三",
+    "wechat": "zhangsan",
+    "username": "张三丰",
+    "content": "Support for defaultProps will be removed from function components in a future major release. Use JavaScript default parameters instead. at {Component} #3615"
+  }
+]

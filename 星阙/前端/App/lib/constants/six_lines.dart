@@ -1,0 +1,1 @@
+const List<String> linesName = ['初爻', '二爻', '三爻', '四爻', '五爻', '上爻'];

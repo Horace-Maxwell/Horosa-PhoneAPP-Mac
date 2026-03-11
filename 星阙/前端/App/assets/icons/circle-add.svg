@@ -1,0 +1,11 @@
+<svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="&#230;&#183;&#187;&#229;&#138;&#160;">
+<circle id="Color" cx="19" cy="19" r="18" stroke="#222426" stroke-width="2"/>
+<path id="Color_2" fill-rule="evenodd" clip-rule="evenodd" d="M26 18H20V12C20 11.447 19.552 11 19 11C18.448 11 18 11.447 18 12V18H12C11.448 18 11 18.447 11 19C11 19.553 11.448 20 12 20H18V26C18 26.553 18.448 27 19 27C19.552 27 20 26.553 20 26V20H26C26.552 20 27 19.553 27 19C27 18.447 26.552 18 26 18" fill="#222426"/>
+<mask id="mask0_0_5942" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="11" y="11" width="16" height="16">
+<path id="Color_3" fill-rule="evenodd" clip-rule="evenodd" d="M26 18H20V12C20 11.447 19.552 11 19 11C18.448 11 18 11.447 18 12V18H12C11.448 18 11 18.447 11 19C11 19.553 11.448 20 12 20H18V26C18 26.553 18.448 27 19 27C19.552 27 20 26.553 20 26V20H26C26.552 20 27 19.553 27 19C27 18.447 26.552 18 26 18" fill="white"/>
+</mask>
+<g mask="url(#mask0_0_5942)">
+</g>
+</g>
+</svg>

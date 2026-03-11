@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="75px" height="74px" viewBox="0 0 75 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 4</title>
+    <g id="0626" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.0-首页" transform="translate(-48, -770)">
+            <g id="编组-4" transform="translate(48, 770)">
+                <circle id="椭圆形" fill="#222426" transform="translate(37, 37) rotate(-180) translate(-37, -37)" cx="37" cy="37" r="37"></circle>
+                <circle id="椭圆形备份-4" fill="#F8CC76" transform="translate(36.5, 18.5) rotate(-180) translate(-36.5, -18.5)" cx="36.5" cy="18.5" r="7.5"></circle>
+                <path d="M56,0 C66.4934102,0 75,8.44513864 75,18.8627451 C75,29.2803516 66.4934102,37.7254902 56,37.7254902 C55.9119439,37.7254902 55.8240277,37.7248955 55.7362552,37.7237099 L55.9994273,37.7112911 C46.0364264,38.078146 38.0751653,46.0583279 38.0751653,55.8490566 C38.0751653,65.6397853 46.0364264,73.6199673 55.9994273,73.9868221 L55.9994201,74 C35.0129199,74 18,57.4345357 18,37 C18,16.6773987 34.8270468,0.181597612 55.6549062,0.0014890671 C55.7698872,0.00101741461 55.8848239,0 56,0 Z" id="形状结合" fill="#F8CC76" transform="translate(46.5, 37) rotate(-180) translate(-46.5, -37)"></path>
+                <circle id="椭圆形" fill="#222426" transform="translate(36.5, 54.5) rotate(-180) translate(-36.5, -54.5)" cx="36.5" cy="54.5" r="7.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

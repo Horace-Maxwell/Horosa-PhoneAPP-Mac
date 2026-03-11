@@ -1,0 +1,86 @@
+name: horosa
+description: "Metaphysics and Astrology Cloud Platform."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.2+1
+
+environment:
+  sdk: '>=3.4.1 <4.0.0'
+
+fluwx:
+  app_id: 'wx8559b476b39e28d1'
+  debug_logging: true # Logging in debug mode.
+  android:
+  #    interrupt_wx_request: true # Defaults to true.
+  #    flutter_activity: 'MainActivity' # Defaults to app's launcher
+  ios:
+    universal_link: https://www.horosa.com
+    no_pay: false
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6 # 苹果风格图标
+  provider: ^6.1.2 # 状态管理
+  flutter_svg: ^2.0.10+1 # svg
+  flutter_screenutil: ^5.9.3 # 屏幕适配
+  lunar: ^1.7.0 # 历法
+  flutter_secure_storage: ^9.2.2 # 本地存储
+  intl: ^0.19.0 # 国际化
+  flutter_slidable: ^3.1.1 # 滑动删除
+  sqflite: ^2.3.3+1 # sqlite 数据库
+  path: ^1.9.0 # 路径
+  flutter_splash_screen: ^3.0.0 # 闪屏页
+  fluwx: ^4.5.5 # 微信
+  permission_handler: ^11.3.1 # 隐私权限
+  amap_flutter_map: ^3.0.0 # 高德地图
+  amap_flutter_base: ^3.0.0 # 高德地图
+  dio: ^5.6.0 # 网络请求
+  rive: ^0.13.12 # rive 动画
+  sensors_plus: ^6.0.1 # 加速度计
+  vibration: ^2.0.0 # 震动
+  crypto: ^3.0.5 # 加密
+  toastification: ^2.2.0 # Toast
+  logger: ^2.4.0 # 日志
+  image_picker: ^1.1.2 # 图片选择
+  cached_network_image: ^3.4.1 # 图片缓存
+  shimmer: ^3.0.0 # 骨架屏
+  path_provider: ^2.1.4 # 本地文件
+  connectivity_plus: ^6.0.5 # 网络状态
+  amap_flutter_location: ^3.0.0 # 高德地图
+  image_gallery_saver: ^2.0.3 # 保存图片
+  audioplayers: ^6.1.0
+  screenshot: ^3.0.0
+  url_launcher: ^6.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/images/
+    - assets/svgs/
+    - assets/database/
+    - assets/rives/
+    - assets/voices/
+
+  fonts:
+    - family: SourceHanSerifCN
+      fonts:
+        - asset: assets/fonts/SourceHanSerifCN-Regular.otf
+        - asset: assets/fonts/SourceHanSerifCN-Medium.otf
+        - asset: assets/fonts/SourceHanSerifCN-Bold.otf
+        - asset: assets/fonts/SourceHanSerifCN-Heavy.otf
+    - family: SourceHanSansCN
+      fonts:
+        - asset: assets/fonts/SourceHanSansCN-Regular.otf
+        - asset: assets/fonts/SourceHanSansCN-Medium.otf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #        style: italic
