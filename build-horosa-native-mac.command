@@ -9,8 +9,6 @@ APP_SRC="${APP_DIR}/build/macos/Build/Products/Release/horosa.app"
 APP_DST="${OUT_DIR}/Horosa.app"
 DMG_PATH="${OUT_DIR}/Horosa-macOS-arm64.dmg"
 DMG_STAGE_DIR="$(mktemp -d "${TMPDIR:-/tmp}/horosa-dmg.XXXXXX")"
-HELPER_SRC="${ROOT_DIR}/scripts/install-and-unquarantine-horosa.command"
-HELPER_NAME="安装并放行 Horosa.command"
 
 cleanup() {
   rm -rf "${DMG_STAGE_DIR}"
@@ -32,8 +30,6 @@ rm -rf "${APP_DST}"
 cp -R "${APP_SRC}" "${APP_DST}"
 
 cp -R "${APP_DST}" "${DMG_STAGE_DIR}/Horosa.app"
-cp "${HELPER_SRC}" "${DMG_STAGE_DIR}/${HELPER_NAME}"
-chmod +x "${DMG_STAGE_DIR}/${HELPER_NAME}"
 ln -s /Applications "${DMG_STAGE_DIR}/Applications"
 
 rm -f "${DMG_PATH}"

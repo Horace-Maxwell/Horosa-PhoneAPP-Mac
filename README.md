@@ -77,7 +77,11 @@ bash ./verify-horosa-stability.command
 
 普通用户不需要自行构建。请直接前往 GitHub Releases 下载最新的 `Horosa-macOS-arm64.dmg`，挂载后将 `Horosa.app` 拖入 Applications 即可使用。
 
-DMG 内还会附带一个 `安装并放行 Horosa.command` 文件。双击后会自动把 `Horosa.app` 安装到“应用程序”，移除隔离属性，并直接打开。
+说明：未做 Developer ID 签名和 notarization 的前提下，macOS 不允许下载后的脚本或 App 在 DMG 中自动完成“放行”。如果系统拦截，请在终端执行：
+
+```bash
+xattr -dr com.apple.quarantine "/Applications/Horosa.app"
+```
 
 ## 致谢
 
