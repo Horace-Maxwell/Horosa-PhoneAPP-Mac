@@ -8,6 +8,15 @@ OUT_DIR="${ROOT_DIR}/native-macos-release"
 APP_SRC="${APP_DIR}/build/macos/Build/Products/Release/horosa.app"
 APP_DST="${OUT_DIR}/Horosa.app"
 DMG_PATH="${OUT_DIR}/Horosa-macOS-arm64.dmg"
+DMG_STAGE_DIR="$(mktemp -d "${TMPDIR:-/tmp}/horosa-dmg.XXXXXX")"
+HELPER_SRC="${ROOT_DIR}/scripts/install-and-unquarantine-horosa.command"
+HELPER_NAME="安装并放行 Horosa.command"
+
+cleanup() {
+  rm -rf "${DMG_STAGE_DIR}"
+}
+
+trap cleanup EXIT
 
 if [[ ! -x "${FLUTTER_BIN}" ]]; then
   echo "Flutter not found at: ${FLUTTER_BIN}"
@@ -22,8 +31,13 @@ mkdir -p "${OUT_DIR}"
 rm -rf "${APP_DST}"
 cp -R "${APP_SRC}" "${APP_DST}"
 
+cp -R "${APP_DST}" "${DMG_STAGE_DIR}/Horosa.app"
+cp "${HELPER_SRC}" "${DMG_STAGE_DIR}/${HELPER_NAME}"
+chmod +x "${DMG_STAGE_DIR}/${HELPER_NAME}"
+ln -s /Applications "${DMG_STAGE_DIR}/Applications"
+
 rm -f "${DMG_PATH}"
-hdiutil create -volname "Horosa" -srcfolder "${APP_DST}" -ov -format UDZO "${DMG_PATH}"
+hdiutil create -volname "Horosa" -srcfolder "${DMG_STAGE_DIR}" -ov -format UDZO "${DMG_PATH}"
 
 echo "Build success: ${APP_DST}"
 echo "DMG success: ${DMG_PATH}"

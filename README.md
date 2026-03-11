@@ -77,6 +77,8 @@ bash ./verify-horosa-stability.command
 
 普通用户不需要自行构建。请直接前往 GitHub Releases 下载最新的 `Horosa-macOS-arm64.dmg`，挂载后将 `Horosa.app` 拖入 Applications 即可使用。
 
+DMG 内还会附带一个 `安装并放行 Horosa.command` 文件。双击后会自动把 `Horosa.app` 安装到“应用程序”，移除隔离属性，并直接打开。
+
 ## 致谢
 
 本项目基于原始星阙手机端工程进行 macOS 适配整理。请尊重原作者及原开发团队的工作成果。
